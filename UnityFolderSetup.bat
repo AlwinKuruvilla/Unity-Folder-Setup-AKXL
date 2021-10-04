@@ -1,13 +1,12 @@
 @echo off
-
-
-
 set myname=Alwin
 
 rem -------
 rem CREATE FOLDERS
 rem -------
+
 md "%myName%'s Assets"
+
 md Animation
 
 md Effects
@@ -36,17 +35,14 @@ md Sounds
 
 md Textures
 
+md BGM
+
+md SFX
+
 
 rem -------
 rem MOVE FOLDERS
 rem -------
-move "%~dp0\Characters" "%~dp0\%myName%'s Assets"
-
-move "%~dp0\Environment" "%~dp0\%myName%'s Assets"
-
-move "%~dp0\Props" "%~dp0\%myName%'s Assets"
-
-move "%~dp0\Vehicles" "%~dp0\%myName%'s Assets"
 
 move "%~dp0\Animation" "%~dp0\%myName%'s Assets"
 
@@ -68,3 +64,14 @@ move "%~dp0\Sounds" "%~dp0\%myName%'s Assets"
 
 move "%~dp0\Textures" "%~dp0\%myName%'s Assets"
 
+move "%~dp0\Characters" "%~dp0\%myName%'s Assets\Models"
+
+move "%~dp0\Environment" "%~dp0\%myName%'s Assets\Models"
+
+move "%~dp0\Props" "%~dp0\%myName%'s Assets\Models"
+
+move "%~dp0\Vehicles" "%~dp0\%myName%'s Assets\Models"
+
+move "%~dp0\BGM" "%~dp0\%myName%'s Assets\Sounds"
+
+move "%~dp0\SFX" "%~dp0\%myName%'s Assets\Sounds"
